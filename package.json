@@ -1,0 +1,11 @@
+{
+  "name": "wodal",
+  "version": "1.0.0",
+  "description": "a nice and fancy modal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wagner Meyer",
+  "license": "ISC"
+}
