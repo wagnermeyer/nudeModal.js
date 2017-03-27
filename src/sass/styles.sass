@@ -1,2 +1,41 @@
 body
     background-color: #CCCCCC
+
+.nude-modal
+    height: 100%
+    width: 100%
+    z-index: 999999
+    overflow: auto
+    top: 0
+    left: 0
+    position: fixed
+    display: none
+
+.nude-modal-background
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.2)
+    z-index: 99999
+    position: fixed
+    opacity: 0
+    transition: opacity 0.5s ease
+
+.nude-modal-box
+    width: 400px
+    height: auto
+    z-index: 999999
+    background-color: #DDDDDD
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%) scale(0.5)
+    position: absolute
+    box-sizing: border-box
+    opacity: 0
+    transition: all 0.5s ease
+
+    &.show
+        transform: translate(-50%,-50%) scale(1)
+
+.show
+    opacity: 1
+

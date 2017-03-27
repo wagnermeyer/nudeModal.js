@@ -34,7 +34,7 @@ gulp.task('concat-js',function(){
 
   gulp.src(srcJs)
   .pipe(plumber())
-  .pipe(concat('scripts.js'))
+  .pipe(concat('nudemodal.js'))
   .pipe(gulp.dest('./dist/js'))
 })
 

@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Wodal - The New Modal Plugin</title>
-    <link rel="stylesheet" href="css/styles/css">
+    <head>
+        <meta charset="utf-8">
+        <title>nudeModal.js - The free-style modal</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+        <script src="js/nudemodal.js"></script>
+    </head>
+    <body>
+        
+        <div class="nude-modal modal-1">
+            1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam?
+        </div>
 
-</head>
-<body>
-</body>
+        <div class="nude-modal modal-2">
+            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa a fuga aut dolorem nesciunt illum quidem quasi dolorum. Mollitia maiores delectus totam consequuntur dolores aspernatur placeat incidunt possimus, ullam?
+        </div>
+
+        <a href="http://google.com" class="open-nude-modal-1">Abrir modal 1</a>
+        <a href="http://google.com" class="open-nude-modal-2">Abrir modal 2</a>
+
+    </body>
+
+    <script>
+        $(document).ready(function(){
+            var firstNudeModal = new nudeModal('.modal-1','.open-nude-modal-1');
+            var secNudeModal = new nudeModal('.modal-2','.open-nude-modal-2');
+            var thirdNudeModal = new nudeModal('.modal-3','.open-nude-modal-3');
+        });
+    </script>
+
 </html>
