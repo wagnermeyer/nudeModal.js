@@ -4,20 +4,18 @@
 * ========================
 */
 
-
-
-
 var nudeModal = function(target,trigger,config) {
 
     this.target = target;
 
     var settings = $.extend({
         autoOpen: false,
+        delay: 0,
         width: '100%',
         height: 'auto',
         backgroundColor: '#000000',
         backgroundOpacity: '0.4'
-    }, config)
+    }, config);
 
     addNudeClass(target);
     wrapNudeModalBox(target);
@@ -25,7 +23,7 @@ var nudeModal = function(target,trigger,config) {
     clickOpenNudeModal(target,trigger);
     clickCloseNudeModal(target);
     escCloseNudeModal(target);
-    console.log(settings.teste);
+    autoOpenNudeModal(target,settings.autoOpen,settings.delay);
 }
 
 /*
@@ -60,8 +58,13 @@ function openNudeModal(target) {
 }
 
 //auto open nude modal
-function autoOpenNudeModal(time) {
-
+function autoOpenNudeModal(target, boolean, delay) {  
+    
+    if (boolean) {
+        setTimeout(function(){
+            openNudeModal(target)
+        }, delay)
+    }
 }
 
 //click open function
@@ -97,11 +100,3 @@ function closeNudeModal(target) {
     });
     console.log("closeNudeModal");
 }
-
-/*
-TODO:
-Abrir automaticamente com delay
-Opção para exibir imagens
-Definir largura
-Definir tempo de animação
-*/
