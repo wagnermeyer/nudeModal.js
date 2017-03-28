@@ -3,10 +3,21 @@
 * === NUDEMODAL OBJECT ===
 * ========================
 */
+
+
+
+
 var nudeModal = function(target,trigger,config) {
 
     this.target = target;
-    this.config = config;
+
+    var settings = $.extend({
+        autoOpen: false,
+        width: '100%',
+        height: 'auto',
+        backgroundColor: '#000000',
+        backgroundOpacity: '0.4'
+    }, config)
 
     addNudeClass(target);
     wrapNudeModalBox(target);
@@ -14,7 +25,7 @@ var nudeModal = function(target,trigger,config) {
     clickOpenNudeModal(target,trigger);
     clickCloseNudeModal(target);
     escCloseNudeModal(target);
-    autoOpen(config.autoOpen);
+    console.log(settings.teste);
 }
 
 /*
