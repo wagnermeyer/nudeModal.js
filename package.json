@@ -1,6 +1,6 @@
 {
   "name": "wodal",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "a nice and fancy modal",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,5 @@
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "swiper": "^3.4.1"
   }
 }

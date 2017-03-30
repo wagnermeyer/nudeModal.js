@@ -35,9 +35,9 @@ body {
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-  .nude-modal-box.show {
+  .nude-modal-box.nm-show {
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1); }
 
-.show {
+.nm-show {
   opacity: 1; }
